@@ -1,10 +1,12 @@
 //create cars api using express
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 
 
 app.use(express.json());
+app.use(cors());
 
 const cars = require('./cars.json');
 
